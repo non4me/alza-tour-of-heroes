@@ -1,0 +1,29 @@
+<div class="heroes__header">
+  <div>
+    <h2>My Heroes</h2>
+  </div>
+
+  <div>
+    <button type="button" class="back" [routerLink]="['/', mainRouters.DETAIL, null]">Create new Hero</button>
+  </div>
+</div>
+
+<ul class="heroes__list">
+  <li *ngFor="let hero of heroes">
+    <toh-list-item tohNameLengthLimit
+                   [hero]="hero"
+                   [selected]="isSelected(hero)"
+                   (selectHero)="setSelected(hero)">
+    </toh-list-item>
+  </li>
+</ul>
+
+<div *ngIf="selectedHero">
+
+  <h2>{{selectedHero?.name | uppercase}} is my hero</h2>
+
+  <div>
+    <button type="button" class="back" [routerLink]="['/', mainRouters.DETAIL, selectedHero?.id]">View Details</button>
+  </div>
+
+</div>

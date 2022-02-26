@@ -1,0 +1,45 @@
+label {
+  color: #435960;
+  font-weight: bold;
+}
+
+input {
+  font-size: 1em;
+  padding: .5rem;
+}
+
+h2, h3 {
+  color: #444;
+  font-weight: lighter;
+}
+
+.mb {
+  margin-bottom: 20px;
+}
+
+.buttons {
+  button {
+    margin-top: 20px;
+    border: none;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+
+  button:hover {
+    background-color: #cfd8dc;
+  }
+
+  .delete {
+    float: right;
+    color: darkred;
+  }
+
+  .save {
+    float: right;
+    margin-left: 50px;
+  }
+}
+

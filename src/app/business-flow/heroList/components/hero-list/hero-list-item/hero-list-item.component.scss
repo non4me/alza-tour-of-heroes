@@ -1,0 +1,67 @@
+:host {
+  button {
+    flex: 1;
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: 0;
+    border-radius: 4px;
+    display: flex;
+    align-items: stretch;
+    height: 1.8em;
+    width: 270px;
+    font-size: 1.2rem;
+    justify-content: space-between;
+
+    &.long-name {
+      background: #ffeff2;
+    }
+
+    &:hover {
+      color: #2c3a41;
+      background: #e6e6e6;
+      left: .1em;
+    }
+
+    &:active {
+      background: #525252;
+      color: #fafafa;
+    }
+
+    &.selected {
+      background: #98d4dc;
+      color: white;
+    }
+
+    &.selected:hover {
+      background: #81bbc2;
+      color: white;
+    }
+  }
+
+  .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #405061;
+    line-height: 1em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
+
+  .name {
+    align-self: center;
+    width: 90%;
+    text-align: initial;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .star {
+    align-self: center;
+    margin-right: 10px;
+  }
+}

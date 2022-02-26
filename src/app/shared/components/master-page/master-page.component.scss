@@ -1,0 +1,13 @@
+.master-page {
+
+  &__title {
+    h1 {
+      color: #369;
+      font-size: 250%;
+    }
+  }
+
+  &__content {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,23 @@
+<div [formGroup]="form">
+  <h2 *ngIf="hero?.id">{{hero.name | uppercase}} Details</h2>
+  <h2 *ngIf="!hero?.id">Create your Hero</h2>
+
+  <div class="mb" *ngIf="hero?.id"><span>id: </span>{{hero?.id}}</div>
+
+  <div class="mb">
+    <label for="hero-name">Hero name: </label>
+    <input id="hero-name" formControlName="name" placeholder="Hero name" maxlength="50"/>
+  </div>
+
+  <div class="mb">
+    <label for="hero-favorite">Is my favorite: </label>
+    <input type="checkbox" id="hero-favorite" formControlName="favorite"/>
+  </div>
+
+  <div class="buttons">
+    <button type="button" class="back" (click)="goBack()">Back</button>
+    <button type="button" class="save" (click)="saveHero()">Save</button>
+    <button type="button" class="delete" (click)="deleteHero()" *ngIf="hero?.id">Delete</button>
+  </div>
+
+</div>

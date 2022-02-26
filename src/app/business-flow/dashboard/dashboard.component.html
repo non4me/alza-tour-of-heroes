@@ -1,0 +1,11 @@
+<div class="main-navigation">
+  <button type="button" [routerLink]="['/', mainRouters.DETAIL, hero.id]" *ngFor="let hero of topList">
+    {{ hero.name }}
+  </button>
+
+  <div *ngIf="!topList?.length">
+    No favorite Heroes :-(
+  </div>
+</div>
+
+

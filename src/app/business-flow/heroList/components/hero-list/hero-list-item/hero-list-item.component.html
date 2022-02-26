@@ -1,0 +1,7 @@
+<button type="button" (click)="onSelect()" [ngClass]="{selected}">
+  <div class="badge">{{hero.id}}</div>
+  <div class="name">{{hero.name}}</div>
+  <div class="star">
+    <span *ngIf="hero.favorite">✭</span>
+  </div>
+</button>

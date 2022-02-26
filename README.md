@@ -1,4 +1,4 @@
 # Alza Tour of Heroes
 
-Enjoy with [DEMO](https://github.com/angular/angular-cli)
+Enjoy with [DEMO](https://non4me.github.io/alza-tour-of-heroes/)
 😉

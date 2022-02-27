@@ -1,4 +1,4 @@
-<button type="button" (click)="onSelect()" [ngClass]="{selected}">
+<button type="button" (click)="onSelect()" [ngClass]="{selected}" *ngIf="hero">
   <div class="badge">{{hero.id}}</div>
   <div class="name">{{hero.name}}</div>
   <div class="star">

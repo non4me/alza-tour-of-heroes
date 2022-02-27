@@ -1,5 +1,7 @@
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { DataProviderService, MockDataProviderService } from '_shared/services/data-provider.service';
 import { HeroListComponent } from './hero-list.component';
 
 describe('HeroListComponent', () => {
@@ -8,9 +10,13 @@ describe('HeroListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HeroListComponent ]
+      declarations: [HeroListComponent],
+      providers: [
+        { provide: DataProviderService, useClass: MockDataProviderService }
+      ],
+      schemas: [NO_ERRORS_SCHEMA]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

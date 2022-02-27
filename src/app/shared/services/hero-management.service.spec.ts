@@ -1,12 +1,18 @@
 import { TestBed } from '@angular/core/testing';
+import { DataProviderService, MockDataProviderService } from './data-provider.service';
 
 import { HeroManagementService } from './hero-management.service';
 
-describe('StateManagementService', () => {
+
+describe('HeroManagementService', () => {
   let service: HeroManagementService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({
+      providers: [
+        { provide: DataProviderService, useClass: MockDataProviderService }
+      ]
+    });
     service = TestBed.inject(HeroManagementService);
   });
 

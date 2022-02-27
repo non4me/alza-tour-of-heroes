@@ -23,7 +23,7 @@ export class HeroDetailComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const heroId = Number(this.route.snapshot.params.heroId);
+    const heroId = Number(this.route.snapshot?.params?.heroId);
 
     this.hero = this.state.getHero(heroId);
 

@@ -22,3 +22,12 @@ export class DataProviderService {
     return HEROES;
   }
 }
+
+@Injectable()
+export class MockDataProviderService {
+  getHeroes() {
+    return [
+      { id: 11, name: 'Mr. Nace', favorite: false }
+    ];
+  }
+}

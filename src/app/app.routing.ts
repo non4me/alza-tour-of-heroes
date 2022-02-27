@@ -1,8 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
 
-import { MainRoutes } from '_models/main-routers.enum';
-
 import { DashboardComponent } from './business-flow/dashboard/dashboard.component';
+import { MainRoutes } from './models/main-routers.enum';
 
 
 export const appRoutes: Routes = [
